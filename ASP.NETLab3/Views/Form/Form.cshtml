@@ -1,0 +1,47 @@
+﻿@model ASP.NETLab3.Models.Form
+
+@{
+    ViewData["Title"] = "Formularz";
+}
+
+<form asp-action="Form" method="post">
+    <div asp-validation-summary="All"></div>
+    <div>
+        <label asp-for="Name">Imię</label>
+        <input asp-for="Name"/>
+    </div>
+    <div>
+        <label asp-for="Surname">Nazwisko</label>
+        <input asp-for="Surname" />
+    </div>
+    <div>
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <label asp-for="Password">Hasło</label>
+        <input asp-for="Password" />
+    </div>
+    <div>
+        <label asp-for="Password">Powtórz Hasło</label>
+        <input asp-for="Password" />
+    </div>
+    <div>
+        <label asp-for="TelephoneNumber">Numer</label>
+        <input asp-for="TelephoneNumber" />
+    </div>
+    <div>
+        <label asp-for="Age">Wiek</label>
+        <input asp-for="Age" />
+    </div>
+    <div>
+        <label asp-for="City">Miasto</label>
+        <select asp-for="City" 
+        asp-items="Html.GetEnumSelectList<Form.Cities>()">
+        </select>
+    </div>
+    <hr />
+    <div>
+        <input type="submit" value="Prześlij"/>
+    </div>
+</form>
