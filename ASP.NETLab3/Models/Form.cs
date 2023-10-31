@@ -12,23 +12,25 @@ namespace ASP.NETLab3.Models
         [MinLength(2, ErrorMessage = "Nazwisko za krótkie!")]
         public string Surname { get; set; }
 
-        [Required(ErrorMessage = "Email jest wymagany!")]
         [DataType(DataType.EmailAddress, ErrorMessage = "Nieprawidłowy format e-mail")]
-        [MinLength(8)]
+        [Required(ErrorMessage = "Email jest wymagany!")]
+        [MinLength(8, ErrorMessage = "Email za krótki!")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Hasło jest wymagane!")]
         [DataType(DataType.Password)]
-        [MinLength(8, ErrorMessage = "Hasło za krótkie!")]
+        [Required(ErrorMessage = "Hasło jest wymagane!")]
+        [RegularExpression("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$", 
+            ErrorMessage = "Hasło musi składać się z minimum 8 znaków, " +
+            "w tym co najmniej jedna cyfra, jedna duża litera i jedna mała litera)")]
         public string Password { get; set; }
 
-        [Compare("Password", ErrorMessage = "Podane hasła nie są jednakowe!")]
-        [Required(ErrorMessage = "Hasło jest wymagane!")]
         [DataType(DataType.Password)]
-        [MinLength(8, ErrorMessage = "Hasło za krótkie!")]
+        [Required(ErrorMessage = "Potwierdzenie hasła jest wymagane!")]
+        [Compare("Password", ErrorMessage = "Podane hasła nie są jednakowe!")]
         public string ConfirmPassword { get; set; }
 
-        [RegularExpression("[0-9]{3}-[0-9]{3}-[0-9]{3}", ErrorMessage = "Prawidłowy format numeru telefonu to: 123-456-789")]
+        [RegularExpression("[0-9]{3}-[0-9]{3}-[0-9]{3}", 
+            ErrorMessage = "Prawidłowy format numeru telefonu to: 123-456-789")]
         public string? TelephoneNumber { get; set; }
 
         [Range(10, 80, ErrorMessage = "Wiek poza zakresem 10 - 80")]

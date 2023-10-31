@@ -23,6 +23,5 @@ namespace ASP.NETLab3.Controllers
         {
             return View(input);
         }
-
     }
 }
