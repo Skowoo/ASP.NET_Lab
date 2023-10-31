@@ -4,7 +4,28 @@
     ViewData["Title"] = "Formularz";
 }
 
-<form asp-action="Form" method="post">
+@using (Html.BeginForm("Form", "Form", FormMethod.Post))
+{
+    @Html.ValidationSummary(false, "", new { @class = "text-danger"})
+    <p>Podaj imię: @Html.TextBoxFor(a => a.Name)</p>
+    <p>Podaj nazwisko: @Html.TextBoxFor(a => a.Surname)</p>
+    <p>Adres e-mail: @Html.TextBoxFor(a => a.Email)</p>
+    <p>Podaj hasło: @Html.PasswordFor(a => a.Password)</p>
+    <p>Potwierdź hasło: @Html.PasswordFor(a => a.ConfirmPassword)</p>
+    <p>Numer telefonu: @Html.TextBoxFor(a => a.TelephoneNumber)</p>
+    <p>Podaj swój wiek: @Html.TextBoxFor(a => a.Age)</p>
+    <p>
+        <label asp-for="City">Wybierz Miasto:</label>
+        <select asp-for="City" asp-items="Html.GetEnumSelectList<Form.Cities>()">
+            <option value="">-- Wybierz Miasto --</option>
+        </select>
+    </p>
+    <input type="submit"/>
+    <input type="reset" />
+}
+
+
+@* <form asp-action="Form" method="post">
     <div asp-validation-summary="All"></div>
     <div>
         <label asp-for="Name">Imię</label>
@@ -45,4 +66,4 @@
         <input type="submit" value="Prześlij"/>
         <input type="reset" value="Wyczyść" />
     </div>
-</form>
+</form> *@
