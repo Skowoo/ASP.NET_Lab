@@ -1,0 +1,19 @@
+﻿@model ASP.NETLab1.Models.Calculator;
+
+@{
+    ViewData["Title"] = "Kalkulator";
+}
+
+<p>Kalkulator</p>
+
+<form action="Calculator">
+    <input type="number" asp-for="liczba1" /> Liczba 1
+
+    <input type="text" asp-for="znak" /> Znak
+
+    <input type="number" asp-for="liczba2" /> Liczba 2
+
+    <input type="submit" />
+</form>
+
+@ViewBag.wynik

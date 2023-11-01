@@ -1,0 +1,16 @@
+﻿@model ASP.NETLab1.Models.Urodziny;
+
+@{
+    ViewData["Title"] = "Formularz urodziny";
+}
+
+<p>Formularz urodziny</p>
+<form action="Urodziny">
+    <input type="text" asp-for="Imie" /> Imie
+
+    <input type="number" asp-for="Rok" /> Rok urodzenia
+
+    <input type="submit"/>
+</form>
+
+@ViewBag.powitanie
