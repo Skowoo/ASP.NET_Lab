@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP.NETLab2", "ASP.NETLab2\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP.NETLab1", "ASP.NETLab1\ASP.NETLab1.csproj", "{90FDE399-2242-4FB1-8683-1E6F68F1525B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRentalPlatform", "CarRentalPlatform\CarRentalPlatform.csproj", "{BFEB6470-D58D-4053-AC4C-B0D3539108F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{90FDE399-2242-4FB1-8683-1E6F68F1525B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90FDE399-2242-4FB1-8683-1E6F68F1525B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90FDE399-2242-4FB1-8683-1E6F68F1525B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFEB6470-D58D-4053-AC4C-B0D3539108F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFEB6470-D58D-4053-AC4C-B0D3539108F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFEB6470-D58D-4053-AC4C-B0D3539108F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFEB6470-D58D-4053-AC4C-B0D3539108F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
