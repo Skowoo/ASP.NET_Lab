@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP.NETLab1", "ASP.NETLab1\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRentalPlatform", "CarRentalPlatform\CarRentalPlatform.csproj", "{BFEB6470-D58D-4053-AC4C-B0D3539108F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wyklad_Notatki", "Wyklad_Notatki\Wyklad_Notatki.csproj", "{EA5419AC-8FE8-4F50-A257-017B2ACA0730}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wyklad_Notatki", "Wyklad_Notatki\Wyklad_Notatki.csproj", "{EA5419AC-8FE8-4F50-A257-017B2ACA0730}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NETLab5", "ASP.NETLab5\ASP.NETLab5.csproj", "{6652D695-1FD3-4B68-BC62-48FFD84C5CB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{EA5419AC-8FE8-4F50-A257-017B2ACA0730}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA5419AC-8FE8-4F50-A257-017B2ACA0730}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA5419AC-8FE8-4F50-A257-017B2ACA0730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6652D695-1FD3-4B68-BC62-48FFD84C5CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6652D695-1FD3-4B68-BC62-48FFD84C5CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6652D695-1FD3-4B68-BC62-48FFD84C5CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6652D695-1FD3-4B68-BC62-48FFD84C5CB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
